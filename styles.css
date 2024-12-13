@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #232323;
+    padding: 1em;
+    text-align: center;
+    animation: fadeIn 2s;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  .icon {
+    font-size: 3em;
+    color: #ff4654;
+    margin-top: 10px;
+  }
+  
+  main {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 2em; 
+    justify-items: center;
+    align-items: start;
+    grid-template-rows: auto; 
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  h2 {
+    margin-bottom: 0.5em;
+    color: #ff4654;
+    font-size: 1.5em;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #ccc;
+  }
+  
+  .agent-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    max-width: 250px; 
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #232323;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr; 
+      padding: 1em;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .agent-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  .agent-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+  
+  .ability {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .ability img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .abilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  
+  .back-link {
+    color: #ff4654;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }  
